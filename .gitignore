@@ -1,0 +1,5 @@
+*.spec
+.idea/
+some_garbage.txt
+
+
