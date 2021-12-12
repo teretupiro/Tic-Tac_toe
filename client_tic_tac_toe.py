@@ -22,7 +22,7 @@ def disp_msg(msg):
 
 
 # Параметры и функции работы с сетью
-server_address = ('localhost', 5403)
+server_address = ('25.39.54.57', 5403)
 # server_address = ('192.168.0.101', 5401)
 mode = 'disconnect'                 # режим работы клиента
 main_tau = 20                       # время цикла главной программы в мс

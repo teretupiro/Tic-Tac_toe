@@ -10,7 +10,7 @@ from socket import *
 # from random import randint                ////0////
 
 #                                           ////0////
-flag_test = 1               # тестовый режим для одного игрока
+flag_test = 0               # тестовый режим для одного игрока
 mode = 'регистрация'        # режим регистрации
 # mode = 'игра'             # режим игры
 play_table = []             # таблица игроков [name, ip, ch]             ////0////
