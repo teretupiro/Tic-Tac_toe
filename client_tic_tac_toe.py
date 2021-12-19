@@ -92,12 +92,13 @@ tr_in.start()
 
 #== создание интерфейса
 root = Tk()
-frm_color = '#52d73B'                   #-- цвет форма
+root.title('Tic_Tac_Toe')
+frm_color = '#ffd800'                   #-- цвет форма
 btn_width = 20                          #-- ширина кнопок
 
 
 # Новая левая панель                                        ////0////
-pn_game = Frame(root, bg='dark green')
+pn_game = Frame(root, bg='cyan')
 pn_game.pack(side='left')
 
 # параметры поля                                        ////0////
@@ -114,7 +115,7 @@ canv.pack()
 
 # очистка канвы
 def init_canv():
-    canv['bg'] = 'white'
+    canv['bg'] = 'black'
     canv.delete(ALL)
     canv.create_rectangle(0, 0, canv_width, canv_height)
     # клетки
@@ -152,7 +153,7 @@ canv.bind('<Button-1>', send_step)
 pnl_right = Frame(root, width=150, bg=frm_color)
 pnl_right.pack(side='right', fill='both', expand=1)
 
-lbl_head = Label(pnl_right, text='Сетевая игра \n "Угадай число"', bg=frm_color, fg='white')
+lbl_head = Label(pnl_right, text='Сетевая игра \n "Крестики Нолики"', bg=frm_color, fg='white')
 lbl_head.grid(row=0, column=0, sticky=W)
 
 lbl_empty = Label(pnl_right, text='   ', bg=frm_color, fg='white')
@@ -283,7 +284,7 @@ def main():
 
         # Обработать окончание игры     ////0////
         if lst_loc[0] == 'end':
-            canv['bg'] = 'yellow'
+            canv['bg'] = '#009900'
 
     # Перезапуститься после задержки
     root.after(main_tau, main)
